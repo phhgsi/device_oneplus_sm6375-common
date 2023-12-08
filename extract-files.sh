@@ -70,7 +70,7 @@ function blob_fixup() {
             sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
             ;;
         vendor/etc/media_*/video_system_specs.json)
-            sed -i "/max_retry_alloc_output_timeout/ s/1000/0/" "${2}"
+            sed -i -E "/max_retry_alloc_output_timeout/ s/([0-9]+)/0/" "${2}"
             ;;
         vendor/etc/msm_irqbalance.conf)
             sed -i "s/IGNORED_IRQ=27,23,38$/&,115,332/" "${2}"
