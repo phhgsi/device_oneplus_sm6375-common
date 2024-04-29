@@ -60,7 +60,7 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.holi:32
 
 PRODUCT_PACKAGES += \
-    DolbyManager
+    OplusDolby
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8350/audio
 
