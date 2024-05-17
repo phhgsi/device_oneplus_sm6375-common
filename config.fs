@@ -89,13 +89,13 @@ caps: NET_BIND_SERVICE NET_ADMIN BLOCK_SUSPEND
 mode: 0755
 user: AID_SYSTEM
 group: AID_SYSTEM
-caps: NET_ADMIN BLOCK_SUSPEND
+caps: NET_ADMIN SYS_NICE BLOCK_SUSPEND
 
 [system/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti-lazy]
 mode: 0755
 user: AID_SYSTEM
 group: AID_SYSTEM
-caps: NET_ADMIN BLOCK_SUSPEND
+caps: NET_ADMIN SYS_NICE BLOCK_SUSPEND
 
 [system/vendor/bin/ims_rtp_daemon]
 mode: 0755
@@ -155,13 +155,13 @@ caps: NET_BIND_SERVICE NET_ADMIN BLOCK_SUSPEND
 mode: 0755
 user: AID_BLUETOOTH
 group: AID_BLUETOOTH
-caps: NET_ADMIN BLOCK_SUSPEND
+caps: NET_ADMIN SYS_NICE BLOCK_SUSPEND
 
 [vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti-lazy]
 mode: 0755
 user: AID_BLUETOOTH
 group: AID_BLUETOOTH
-caps: NET_ADMIN BLOCK_SUSPEND
+caps: NET_ADMIN SYS_NICE BLOCK_SUSPEND
 
 [vendor/bin/ims_rtp_daemon]
 mode: 0755
