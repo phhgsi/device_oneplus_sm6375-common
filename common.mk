@@ -348,6 +348,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.oplus-multihal \
+    android.hardware.sensors@2.0-ScopedWakelock \
     android.hardware.sensors@2.0 \
     android.hardware.sensors@2.0.vendor \
     android.hardware.sensors@2.0-impl \
