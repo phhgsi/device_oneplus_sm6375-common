@@ -59,9 +59,6 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     sound_trigger.primary.holi:32
 
-PRODUCT_PACKAGES += \
-    OplusDolby
-
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8350/audio
 
 PRODUCT_COPY_FILES += \
