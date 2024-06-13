@@ -60,6 +60,9 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.holi:32
 
 PRODUCT_PACKAGES += \
+    libaudioroute.vendor
+
+PRODUCT_PACKAGES += \
     OplusDolby
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8350/audio
@@ -115,6 +118,9 @@ PRODUCT_PACKAGES += \
     libcamera_metadata_shim \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
+
+PRODUCT_PACKAGES += \
+    liblz4.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -247,9 +253,6 @@ PRODUCT_PACKAGES += \
     ueventd.oplus.rc \
     ueventd.qcom.rc
 
-# Kernel
-PRODUCT_ENABLE_UFFD_GC := false
-
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
@@ -323,6 +326,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
+PRODUCT_PACKAGES += \
+    libssl.vendor
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.oplus-libperfmgr
@@ -345,6 +351,11 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
     librmnetctl
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libjsoncpp.vendor \
+    libsqlite.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -478,6 +489,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
+
+PRODUCT_PACKAGES += \
+    libpng.vendor
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
